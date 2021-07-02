@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 
 
 import com.google_ml_kit.vision.FaceDetector;
-import com.google_ml_kit.vision.CustomRemoteModelManager;
+
 import com.google_ml_kit.vision.TextDetector;
 
 import java.util.ArrayList;
@@ -28,9 +28,7 @@ public class MlKitMethodCallHandler implements MethodChannel.MethodCallHandler {
 
                         new FaceDetector(context),
 
-                        new TextDetector(context),
-
-                        new CustomRemoteModelManager()
+                        new TextDetector(context)                       
 
                 ));
 
